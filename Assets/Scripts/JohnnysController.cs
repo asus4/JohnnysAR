@@ -13,14 +13,12 @@ namespace Johnnys
     public class JohnnysController : MonoBehaviour
     {
         [SerializeField]
-        ARCameraManager cameraManager;
-
-        [SerializeField]
         ARHumanBodyManager humanBodyManager;
 
         [SerializeField]
-        RawImage image;
+        Material material;
 
+    static readonly int _textureStencil = Shader.PropertyToID("_textureStencil");
 
         void Start()
         {
@@ -36,7 +34,7 @@ namespace Johnnys
             }
 
             var stencil = humanBodyManager.humanStencilTexture;
-            image.texture = stencil;
+            material.SetTexture(_textureStencil, stencil);
         }
     }
 }
