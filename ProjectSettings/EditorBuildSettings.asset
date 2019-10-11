@@ -11,3 +11,5 @@ EditorBuildSettings:
   m_configObjects:
     com.unity.xr.arkit.PlayerSettings: {fileID: 11400000, guid: 9bee38139ea4649628a5e0abd54f383f,
       type: 2}
+    com.unity.xr.management.arkit_loader: {fileID: 11400000, guid: bdbd964b20c944aca92636171c37ac88,
+      type: 2}

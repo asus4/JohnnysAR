@@ -13,6 +13,9 @@ namespace Johnnys
     public class JohnnysController : MonoBehaviour
     {
         [SerializeField]
+        ARCameraManager cameraManager;
+
+        [SerializeField]
         ARHumanBodyManager humanBodyManager;
 
         [SerializeField]
